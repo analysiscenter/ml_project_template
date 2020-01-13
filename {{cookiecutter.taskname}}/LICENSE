@@ -1,0 +1,2 @@
+SOME LICENSE
+Copyright (c) {% now 'utc', '%Y' %}, Gazprom neft

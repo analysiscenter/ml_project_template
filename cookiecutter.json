@@ -1,0 +1,5 @@
+{
+    "taskname": "Template",
+    "libmode": "git.submodule",
+    "include_library": ["SeismicPro", "SeismiQB", "PetroFlow"]
+}
