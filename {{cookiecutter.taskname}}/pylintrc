@@ -1,0 +1,42 @@
+[MASTER]
+ignore=seismicpro,
+    seismiqb,
+    petroflow
+
+extension-pkg-whitelist=numpy
+init-hook='import sys; sys.path.append(".")'
+
+[FORMAT]
+max-line-length=120
+max-attributes=25
+max-args=15
+max-locals=25
+
+# Good variable names which should always be accepted, separated by a comma
+good-names=
+
+# Regular expression matching correct variable names
+# variable names should have 2 or more letters and shouldn't begin or end with an underscore
+# also allowed: one-letter variables and single underscores
+variable-rgx=(([a-z][a-z0-9_]*[a-z0-9])|([a-z_]))$
+
+[MESSAGE CONTROL]
+disable=
+    no-value-for-parameter,
+    no-self-use,
+    too-few-public-methods,
+    unsubscriptable-object,
+    no-method-argument,
+    no-member,
+    arguments-differ,
+    len-as-condition,
+    keyword-arg-before-vararg,
+    too-many-locals,
+    logging-format-interpolation,
+    no-name-in-module
+
+[TYPECHECK]
+ignored-modules=numpy, numba
+
+[MISCELLANEOUS]
+notes=
