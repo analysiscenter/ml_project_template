@@ -1,3 +1,3 @@
-# add paths to your data to data_paths.py. It will not be under Git control
+# add paths to your data to dataset_paths.py. It will not be under Git control
 
-from datapaths import *
+from .dataset_paths import *
