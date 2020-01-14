@@ -1,6 +1,8 @@
 import sys
 import subprocess
 
+subprocess.run(['git', 'init'])
+
 mode = '{{ cookiecutter.libmode }}'
 print("Mode is:{}.".format(mode))
 
@@ -10,6 +12,7 @@ libpaths = {
 'SeismicPro': 'https://github.com/gazprom-neft/SeismicPro.git',
 'SeismiQB': 'https://github.com/gazprom-neft/seismiqb.git',
 'PetroFlow': 'https://github.com/gazprom-neft/petroflow.git',
+# 'testlib': 'https://github.com/analysiscenter/segy.git',
 }
 
 if mode is "git.submodule":
@@ -24,3 +27,6 @@ else:
     sys.exit(1)
 
 pass
+
+subprocess.run(['git', 'add', '*'])
+subprocess.run(['git', 'commit', '-m', '"initial commit"'])
