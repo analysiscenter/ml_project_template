@@ -42,7 +42,6 @@ The directory structure of your new project looks like this:
 ├── .dockerignore
 ├── .gitattributes
 ├── .gitignore
-├── LICENSE
 ├── notebooks                 <- Development notebooks
 │   └── readme.md
 ├── pylintrc
