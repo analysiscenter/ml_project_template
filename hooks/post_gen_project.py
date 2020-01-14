@@ -19,7 +19,7 @@ if mode is "git.submodule":
 
     path = libpaths[library]
     subprocess.run(['git', 'submodule', 'add', path])
-    subprocess.run(['git', 'submodule', 'update', '--init'])
+    subprocess.run(['git', 'submodule', 'update', '--init', '--recursive'])
 
     pass
 else:
