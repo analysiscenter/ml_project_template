@@ -1,4 +1,4 @@
-{% set keep_in_template = ['dataset_paths/dataset_paths.py'] %}
+{% set keep_in_template = ['datasets/dataset_paths.py'] %}
 {% for item in keep_in_template %}
 {{ item }}
 {% endfor %}
