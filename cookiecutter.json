@@ -2,5 +2,5 @@
     "project_name": "Template",
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "libmode": "git.submodule",
-    "include_library": ["SeismicPro", "SeismiQB", "PetroFlow"]
+    "include_library": ["testlib", "SeismicPro", "SeismiQB", "PetroFlow"]
 }

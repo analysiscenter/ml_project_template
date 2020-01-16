@@ -12,7 +12,7 @@ libpaths = {
 'SeismicPro': 'https://github.com/gazprom-neft/SeismicPro.git',
 'SeismiQB': 'https://github.com/gazprom-neft/seismiqb.git',
 'PetroFlow': 'https://github.com/gazprom-neft/petroflow.git',
-# 'testlib': 'https://github.com/analysiscenter/segy.git',
+'testlib': 'https://github.com/analysiscenter/segy.git',
 }
 
 if mode is "git.submodule":
