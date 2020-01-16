@@ -12,6 +12,9 @@ Add your project description here
 │   └── __init__.py           <- from .dataset_paths import <list your available paths> This file is under source control
 ├── docker_containers
 ├── .dockerignore
+├── .github
+│   └── workflows
+│       └── status.yml
 ├── .gitattributes
 ├── .gitignore
 ├── notebooks                 <- Development notebooks
