@@ -39,6 +39,9 @@ The directory structure of your new project looks like this:
 │   └── __init__.py           <- from .dataset_paths import <list your available paths> This file is under source control
 ├── docker_containers
 │   └── readme.md
+├── extra                     <- extra helper utilities that are not project-specific, ex. cookiecutter template updater
+│   ├── update_cookiecutter_template.sh <- run this script to merge recent changes in cookiecutter template into your project
+│   └── .cookiecutter.json
 ├── .dockerignore
 ├── .github
 │   └── workflows
