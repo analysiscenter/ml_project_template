@@ -40,6 +40,9 @@ The directory structure of your new project looks like this:
 ├── docker_containers
 │   └── readme.md
 ├── .dockerignore
+├── .github
+│   └── workflows
+│       └── status.yml
 ├── .gitattributes
 ├── .gitignore
 ├── notebooks                 <- Development notebooks
