@@ -43,6 +43,9 @@ The directory structure of your new project looks like this:
 │   ├── update_cookiecutter_template.sh <- run this script to merge recent changes in cookiecutter template into your project
 │   └── .cookiecutter.json
 ├── .dockerignore
+├── .github
+│   └── workflows
+│       └── status.yml
 ├── .gitattributes
 ├── .gitignore
 ├── notebooks                 <- Development notebooks

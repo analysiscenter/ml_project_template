@@ -14,6 +14,9 @@ Add your project description here
 ├── .dockerignore
 ├── extra                     <- extra helper utilities that are not project-specific, ex. cookiecutter template updater
 │   └── update_cookiecutter_template.sh <- run this script to merge recent changes in cookiecutter template into your project
+├── .github
+│   └── workflows
+│       └── status.yml
 ├── .gitattributes
 ├── .gitignore
 ├── notebooks                 <- Development notebooks
