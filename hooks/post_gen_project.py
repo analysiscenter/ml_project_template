@@ -21,12 +21,10 @@ if mode is "git.submodule":
     subprocess.run(['git', 'submodule', 'add', path])
     subprocess.run(['git', 'submodule', 'update', '--init', '--recursive'])
 
-    pass
 else:
     print("Error! only 'git.submodule' mode is currenly valid. {} given".format(mode))
     sys.exit(1)
 
-pass
 
 subprocess.run(['git', 'add', '*'])
 subprocess.run(['git', 'commit', '-m', '"initial commit"'])
