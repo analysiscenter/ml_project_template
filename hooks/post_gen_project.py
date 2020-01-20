@@ -1,7 +1,7 @@
 import sys
 import subprocess
+import json
 
-subprocess.run(['git', 'init'])
 
 mode = '{{ cookiecutter.libmode }}'
 print("Mode is:{}.".format(mode))
@@ -17,14 +17,19 @@ libpaths = {
 
 if mode is "git.submodule":
 
+    subprocess.run(['git', 'init'])
+
     path = libpaths[library]
     subprocess.run(['git', 'submodule', 'add', path])
     subprocess.run(['git', 'submodule', 'update', '--init', '--recursive'])
 
-else:
-    print("Error! only 'git.submodule' mode is currenly valid. {} given".format(mode))
-    sys.exit(1)
+    with open('extra/.cookiecutter.json') as inpf:
+        context = json.load(inpf)
 
+    context['libmode'] = 'no_submodules'
 
-subprocess.run(['git', 'add', '*'])
-subprocess.run(['git', 'commit', '-m', '"initial commit"'])
+    with open('extra/.cookiecutter.json', 'w') as outf:
+        json.dump(context, outf, indent=4)
+
+    subprocess.run(['git', 'add', '*'])
+    subprocess.run(['git', 'commit', '-m', '"initial commit"'])
