@@ -1,7 +1,7 @@
 # TaskCookieCutter
 cookiecutter template for DS projects
 
-Adaptation from [this repo](https://github.com/drivendata/cookiecutter-data-science)
+Inspired by [this repo](https://github.com/drivendata/cookiecutter-data-science)
 
 ### Requirements to use the cookiecutter template:
  - Python 2.7 or 3.5
@@ -28,7 +28,6 @@ GitHub repositories should be created manually, but automatic GitHub repository 
 
 
 ### The resulting directory structure
-------------
 
 The directory structure of your new project looks like this:
 
