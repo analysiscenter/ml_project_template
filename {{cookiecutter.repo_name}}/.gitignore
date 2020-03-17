@@ -1,9 +1,3 @@
-{% set keep_in_template = ['datasets/dataset_paths.py'] %}
-{% for item in keep_in_template %}
-{{ item }}
-{% endfor %}
-
-
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

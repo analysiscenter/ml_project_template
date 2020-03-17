@@ -7,9 +7,7 @@ Add your project description here
 
 ```
 .
-├── datasets                  <- Module for paths. In sources write:   from datasets import path_needed
-│   ├── dataset_paths.py      <- Paths to datasets are stored as constants here. This file is excluded from source control
-│   └── __init__.py           <- from .dataset_paths import <list your available paths> This file is under source control
+├── datasets                  <- Keep your datasets here
 ├── docker_containers
 ├── .dockerignore
 ├── extra                     <- extra helper utilities that are not project-specific, ex. cookiecutter template updater

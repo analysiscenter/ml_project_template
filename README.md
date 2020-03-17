@@ -33,9 +33,7 @@ The directory structure of your new project looks like this:
 
 ```
 .
-├── dataset_paths             <- Module for paths. In sources write:   from dataset_paths import path_needed
-│   ├── dataset_paths.py      <- Paths to datasets are stores as constants here. This file is excluded from source control
-│   └── __init__.py           <- from .dataset_paths import <list your available paths> This file is under source control
+├── dataset_paths             <- Keep your datasets here
 ├── docker_containers
 │   └── readme.md
 ├── extra                     <- extra helper utilities that are not project-specific, ex. cookiecutter template updater
