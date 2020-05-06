@@ -18,6 +18,8 @@ $ conda config --add channels conda-forge
 $ conda install cookiecutter
 ```
 
+ - dvc >= 0.93
+
 
 ### To start a new project, run:
 ```

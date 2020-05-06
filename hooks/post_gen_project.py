@@ -42,3 +42,15 @@ if library is not "no":
 print("adding files to git ...")
 subprocess.run(['git', 'add', '*'])
 subprocess.run(['git', 'commit', '-m', 'initial commit'])
+
+if '{{ cookiecutter.init_DVC }}' == 'yes':
+    print("initializing DVC ...")
+
+    subprocess.run(['dvc', 'init'])
+
+    if '{{ cookiecutter.dvc_cache_dir }}' != 'local':
+        subprocess.run(['dvc', 'cache', 'dir', '{{ cookiecutter.dvc_cache_dir }}'])
+
+    subprocess.run(['dvc', 'config', 'cache.protected', 'true'])
+    subprocess.run(['dvc', 'config', 'cache.type', 'symlink'])
+    subprocess.run(['git', 'commit', '-m', 'init DVC'])
