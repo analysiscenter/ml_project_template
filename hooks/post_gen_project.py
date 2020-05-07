@@ -59,4 +59,6 @@ if '{{ cookiecutter.init_DVC }}' == 'yes':
 
     subprocess.run(['dvc', 'config', 'cache.protected', 'true'])
     subprocess.run(['dvc', 'config', 'cache.type', 'symlink'])
+
+    subprocess.run(['git', 'add', '*'])
     subprocess.run(['git', 'commit', '-m', 'init DVC'])
