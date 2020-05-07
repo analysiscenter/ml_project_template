@@ -26,6 +26,23 @@ $ conda install cookiecutter
 cookiecutter https://github.com/analysiscenter/TaskCookieCutter
 ```
 
+You will be asked for these fields:
+| Field                 | Default                                                       |  Description    |
+|-----------------------|---------------------------------------------------------------|-----------------|
+| project_name          | `Template`                                                    | Verbose project name, used in headings (docs, readme, etc).  |
+| repo_name             | `project_name` lowercased with spaces replaced by underscores | Repository name on GitHub (and project's root directory name). |
+| include_library       | `no`                                                          | Chose a library to attach as a git submodule. `no` means that no library will be attached. |
+| git_config_user_name  | `do_not_set`                                                  | Specify local user name for git. Default is to skip this. |
+| git_config_user_email | `do_not_set`                                                  | Specify local user email for git. Default is to skip this. |
+| init_DVC              | `yes`                                                         | Select whether you want to initialize DVC in the project. |
+| dvc_cache_dir_mode    | `pass` if you selected not to initialize DVC, else `infer`    | Select cache directory for DVC. If `pass`, nothing is done; if `infer`, path is selected as `/data/<repo_name>/.dvc/cache` depending on `include_library`, if `custom`, value from `custom_dvc_cache_dir` is used |
+| custom_dvc_cache_dir  | `pass`                                                        | Provide a path to DVC cache directory, if you selected `custom` as `dvc_cache_dir_mode`. |
+| lib_dvc_cache_dir_map | `default`                                                     | Just press `Enter` :) This sets some utility values. |
+
+
+
+
+
 GitHub repositories should be created manually, but automatic GitHub repository creation can be added in future
 
 
