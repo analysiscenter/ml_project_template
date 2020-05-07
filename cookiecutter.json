@@ -5,6 +5,15 @@
     "git_config_user_name": "do_not_set",
     "git_config_user_email": "do_not_set",
     "init_DVC": ["yes", "no"],
-    "dvc_cache_dir_mode": ["local/pass", "infer", "custom"],
-    "custom_dvc_cache_dir": "pass"
+    "dvc_cache_dir_mode": [
+        "{% if cookiecutter.init_DVC == 'no' %}pass{% else %}infer{% endif %}",
+        "local",
+        "custom"
+    ],
+    "custom_dvc_cache_dir": "pass",
+    "lib_dvc_cache_dir_map": {
+        "SeismicPro": "/data/seismic_data/.dvc/cache",
+        "seismiqb": "/data/seismic_data/.dvc/cache",
+        "petroflow": "/data/petro_data/.dvc/cache"
+    }
 }

@@ -15,12 +15,6 @@ libpaths = {
 # 'testlib': 'https://github.com/analysiscenter/segy.git',
 }
 
-lib_dvc_cache_dir_map = {
-    'SeismicPro': '/data/seismic_data/.dvc/cache',
-    'seismiqb': '/data/petro_data/.dvc/cache', #'/data/seismic_data/.dvc/cache',
-    'petroflow': '/data/petro_data/.dvc/cache',
-}
-
 
 print("initializing git repo ...")
 subprocess.run(['git', 'init'])
@@ -56,6 +50,7 @@ if '{{ cookiecutter.init_DVC }}' == 'yes':
     subprocess.run(['dvc', 'init'])
 
     dvc_cache_dir_mode = '{{ cookiecutter.dvc_cache_dir_mode }}'
+    lib_dvc_cache_dir_map = {{ cookiecutter.lib_dvc_cache_dir_map }}
 
     if dvc_cache_dir_mode == 'custom':
         subprocess.run(['dvc', 'cache', 'dir', '{{ cookiecutter.custom_dvc_cache_dir }}'])
