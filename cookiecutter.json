@@ -4,6 +4,7 @@
     "include_library": ["no", "SeismicPro", "seismiqb", "petroflow", "batchflow"],
     "git_config_user_name": "do_not_set",
     "git_config_user_email": "do_not_set",
+    "enable_slack_notification": ["no", "yes"],
     "init_DVC": ["yes", "no"],
     "dvc_cache_dir_mode": [
         "{% if cookiecutter.init_DVC == 'no' %}pass{% else %}infer{% endif %}",
