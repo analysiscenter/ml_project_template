@@ -1,0 +1,16 @@
+#!/bin/sh
+
+INPUT_FILE=$1
+START_LINE=`head -n1 $INPUT_FILE`
+
+echo "Start validation..."
+
+if [ "$START_LINE" =  "#Validate" ]; then
+    python3 validator/prepare-commit-msg.py
+    retVal=$?
+    if [ $retVal -ne 0 ]; then
+        echo "Validation failed."
+        exit 1
+    fi
+    git add validator_results.json
+fi
