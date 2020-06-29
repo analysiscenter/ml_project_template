@@ -17,8 +17,8 @@ or
 $ conda config --add channels conda-forge
 $ conda install cookiecutter
 ```
-
- - dvc >= 0.93
+ 
+ - dvc >= 0.93 (optional, only if you want to control your data using DVC)
 
 
 ### To start a new project, run:
