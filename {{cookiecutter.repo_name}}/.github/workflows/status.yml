@@ -28,6 +28,7 @@ jobs:
     - name: Check pylint
       run: pylint -rn --rcfile pylintrc src
 
+{% if cookiecutter.enable_slack_notification == 'yes' %}
 {% raw %}
     - name: Slack notification
       if: success()
@@ -45,3 +46,4 @@ jobs:
       with:
         args: '{\"channel\": \"#commits\", \"attachments\": [{\"color\": \"danger\", \"text\": \"<${{ github.event.commits[0].url }}|${{ github.repository }}: *${{ github.event.commits[0].message }}*> by ${{ github.event.commits[0].author.name }}\n<${{ github.event.commits[0].url }}/checks|Workflow ${{ github.workflow }}>: `${{ job.status }}`\"}]}'
 {% endraw %}
+{% endif %}
