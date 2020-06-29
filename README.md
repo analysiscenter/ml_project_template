@@ -1,4 +1,4 @@
-# TaskCookieCutter
+# ML Project Template
 cookiecutter template for DS projects
 
 Inspired by [this repo](https://github.com/drivendata/cookiecutter-data-science)
@@ -23,7 +23,7 @@ $ conda install cookiecutter
 
 ### To start a new project, run:
 ```
-cookiecutter https://github.com/analysiscenter/TaskCookieCutter
+cookiecutter https://github.com/analysiscenter/ml_project_template
 ```
 
 You will be asked for these fields:
