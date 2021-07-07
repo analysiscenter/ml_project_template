@@ -33,11 +33,11 @@ if library is not "no":
     print("adding submodule", library, "...")
 
     path = libpaths[library]
-    subprocess.run(['git', 'submodule', 'add', path])
+    subprocess.run(['git', 'submodule', 'add', path], cwd='src')
     subprocess.run(['git', 'submodule', 'update', '--init', '--recursive'])
 
     print("copying requirements...")
-    shutil.copyfile(os.path.join(library, 'requirements.txt'), 'requirements.txt')
+    shutil.copyfile(os.path.join('src', library, 'requirements.txt'), 'requirements.txt')
 
 
 print("adding files to git ...")
