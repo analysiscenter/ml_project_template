@@ -52,10 +52,11 @@ The directory structure of your new project looks like this:
 
 ```
 .
-├── Library submodule         <- SeismicPro, SeismiQB or PetroFlow as a git submodule
 ├── datasets                  <- Keep your datasets here
 ├── docker_containers
 ├── .dockerignore
+├── .dvc
+├── .dvcignore
 ├── extra                     <- extra helper utilities that are not project-specific, ex. cookiecutter template updater
 │   ├── .cookiecutter.json
 │   ├── src
@@ -66,12 +67,16 @@ The directory structure of your new project looks like this:
 │   └── workflows
 │       └── status.yml
 ├── .gitignore
+├── .gitmodules
 ├── notebooks                 <- Development notebooks
 ├── overview                  <- Notebooks with overview of main results
 ├── pylintrc
 ├── readme.md                 <- The top-level README for developers using this project.
 ├── requirements.txt
 ├── src                       <- Project-specific models and utilities
+│   ├── Library submodule     <- SeismicPro, SeismiQB, PetroFlow, or batchflow as a git submodule
+│   ├── __init__.py
+│   └── readme.md
 └── tests
 
 ```
