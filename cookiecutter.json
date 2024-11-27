@@ -1,7 +1,7 @@
 {
     "project_name": "Template",
     "repo_name": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-    "include_library": ["no", "SeismicPro", "seismiqb", "petroflow", "batchflow"],
+    "include_library": ["no", "SeismicPro", "seismiqb", "batchflow"],
     "git_config_user_name": "do_not_set",
     "git_config_user_email": "do_not_set",
     "enable_slack_notification": ["no", "yes"],
@@ -14,7 +14,6 @@
     "custom_dvc_cache_dir": "pass",
     "lib_dvc_cache_dir_map": {
         "SeismicPro": "/data/seismic_data/.dvc/cache",
-        "seismiqb": "/data/seismic_data/.dvc/cache",
-        "petroflow": "/data/petro_data/.dvc/cache"
+        "seismiqb": "/data/seismic_data/.dvc/cache"
     }
 }

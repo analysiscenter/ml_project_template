@@ -74,7 +74,7 @@ The directory structure of your new project looks like this:
 ├── readme.md                 <- The top-level README for developers using this project.
 ├── requirements.txt
 ├── src                       <- Project-specific models and utilities
-│   ├── Library submodule     <- SeismicPro, SeismiQB, PetroFlow, or batchflow as a git submodule
+│   ├── Library submodule     <- SeismicPro, SeismiQB, or batchflow as a git submodule
 │   ├── __init__.py
 │   └── readme.md
 └── tests

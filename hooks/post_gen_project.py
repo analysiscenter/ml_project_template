@@ -8,9 +8,8 @@ import os
 library = '{{ cookiecutter.include_library }}'
 
 libpaths = {
-'SeismicPro': 'https://github.com/gazprom-neft/SeismicPro.git',
-'seismiqb': 'https://github.com/gazprom-neft/seismiqb.git',
-'petroflow': 'https://github.com/gazprom-neft/petroflow.git',
+'SeismicPro': 'https://github.com/GeoscienceML/SeismicPro.git',
+'seismiqb': 'https://github.com/GeoscienceML/seismiqb.git',
 'batchflow': 'https://github.com/analysiscenter/batchflow.git'
 # 'testlib': 'https://github.com/analysiscenter/segy.git',
 }
